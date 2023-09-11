@@ -43,11 +43,11 @@ class Form extends Component {
     return (
       <>
       <div className="formContainer">
-        <h1 id="heading">Employee Feedback Form</h1>
+        <h1 id="heading" className="heading">Employee Feedback Form</h1>
         <form>
           <label id="font" htmlFor="name">
             Name:{" "}
-          </label>
+          </label> <br />
           <input
             type="text"
             name="name"
@@ -59,7 +59,7 @@ class Form extends Component {
           <br />
           <label id="font" htmlFor="Department">
             Department:{" "}
-          </label>
+          </label><br />
           <input
             type="text"
             name="Department"
@@ -71,7 +71,7 @@ class Form extends Component {
           <br />
           <label id="font" htmlFor="Ratings">
             Rating
-          </label>
+          </label><br />
           <input
             type="number"
             name="Rating"
@@ -81,15 +81,15 @@ class Form extends Component {
           ></input>
           <br />
           <br />
-          <button onClick={this.handleSubmit}>Submit</button>
+          <button onClick={this.handleSubmit} className="submitBtn">Submit</button>
         </form>
         </div>
         <div id="outercontainer">
           {this.state.emptyArray.map((item, index) => {
             return (
-              <div key={index} id="list">
-                <h3 id="h1">
-                  Name: {item.name}||Department: {item.Department}||Rating:{" "}
+              <div key={index} id="list" className="printContainer">
+                <h3 id="h1" className="print">
+                  Name: {item.name} || Department: {item.Department} || Rating:{" "}
                   {item.Rating}
                 </h3>
               </div>

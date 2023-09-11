@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+.formContainer{
+  border: 1px solid transparent;
+  background-color: pink;
+  width: 35vw;
+  margin: auto;
+  margin-top: 4vw;
+  box-shadow: 2px 2px 5px rgba(57, 2, 2, 0.349);
+  padding: 2vw;
+  border-radius: 5px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label{
+  margin: 0.3vw 0vw;
+  color: rgba(3, 3, 3, 0.762);
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+  width: 100%;
+  padding: 0.5vw 0vw;
+  border-radius: 5px;
+  border-color: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.submitBtn{
+  width: 100%;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 0.8vw 0vw; 
+  background-color: rgb(198, 27, 55);
   color: white;
+  font-size: large;
+  letter-spacing: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.submitBtn:hover{
+  box-shadow: 2px 2px 5px rgba(57, 2, 2, 0.349);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading{
+  text-align: center;
+  font-size: 2vw;
+  color: rgba(0, 0, 0, 0.756);
+  transition: all 0.2s linear;
+}
+
+.heading:hover{
+  letter-spacing: 2px;
+}
+
+.printContainer{
+  text-align :center;
+  margin-top: 2vw;
+}
+
+.print{
+  display: inline;
+  background-color: pink;
+  color: rgba(0, 0, 0, 0.745);
+  padding: 1vw;
+  border-radius: 5px;
 }
