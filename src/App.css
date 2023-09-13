@@ -1,4 +1,4 @@
-.formContainer{
+.formContainer {
   border: 1px solid transparent;
   background-color: pink;
   width: 35vw;
@@ -7,57 +7,67 @@
   box-shadow: 2px 2px 5px rgba(57, 2, 2, 0.349);
   padding: 2vw;
   border-radius: 5px;
-
 }
 
-label{
+label {
   margin: 0.3vw 0vw;
   color: rgba(3, 3, 3, 0.762);
   display: inline-block;
 }
 
-input{
+input {
   width: 100%;
   padding: 0.5vw 0vw;
   border-radius: 5px;
   border-color: transparent;
 }
 
-.submitBtn{
+.submitBtn {
   width: 100%;
   border-radius: 5px;
   border-color: transparent;
-  padding: 0.8vw 0vw; 
+  padding: 0.8vw 0vw;
   background-color: rgb(198, 27, 55);
   color: white;
   font-size: large;
   letter-spacing: 2px;
 }
 
-.submitBtn:hover{
+.submitBtn:hover {
   box-shadow: 2px 2px 5px rgba(57, 2, 2, 0.349);
 }
 
-.heading{
+.heading {
   text-align: center;
   font-size: 2vw;
   color: rgba(0, 0, 0, 0.756);
   transition: all 0.2s linear;
 }
 
-.heading:hover{
+.heading:hover {
   letter-spacing: 2px;
 }
 
-.printContainer{
-  text-align :center;
-  margin-top: 2vw;
+.printMain {
+  margin: 1vw auto;
+  border: 1px solid red;
 }
 
-.print{
-  display: inline;
+.outercontainer{
+  display: inline-flex;
+  justify-content: center;
+}
+
+.printContainer{
+  display: inline-flex;
+  justify-content: center;
+}
+
+.print {
   background-color: pink;
   color: rgba(0, 0, 0, 0.745);
   padding: 1vw;
   border-radius: 5px;
+  text-align: center;
+  margin: 1vw;
 }
